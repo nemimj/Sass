@@ -1,0 +1,32 @@
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}
+
+
+
+header{
+    background-color: white;
+   
+
+    h1{
+        color: set-text-color(white);
+    }
+}
+
+mixins 
+
+@mixin transform($property){
+    --webkit-transform: $property;
+    -ms-transform:$property;
+    transform: $property;
+}
+
+ &:hover{
+    @include transform(rotate(20deg));
+    background-color: darken(#333,20%);    
+ }

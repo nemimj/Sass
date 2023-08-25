@@ -1,7 +1,9 @@
-// variables 
+//*  variables 
 $paragraph-height : 1.5rem;
-@import 'variables';
 
+//*  partials 
+@import 'variables';
+@import 'function';
 *{
     margin: 0;
     padding: 0;
@@ -28,13 +30,13 @@ span{
     background-color: lightsalmon;
 }
 
-
+//*  Nesting
 header{
-    background-color: #333;
-    color: #f3f3f3;
+    background-color: white;
+   
 
     h1{
-        color: aqua;
+        color: set-text-color(white);
     }
 }
 
@@ -61,7 +63,7 @@ color: #333;
 }
 
 
-// ? Inheritance 
+//*  Inheritance 
 
 %btn-shared{
 
@@ -79,11 +81,22 @@ color: #333;
         @extend %btn-shared;
         background-color: #333;
         color: white;
+
+
+        &:hover{
+           @include transform(rotate(20deg));
+           background-color: darken(#333,20%);    
+        }
     }
     &-dark{
         @extend %btn-shared;
         background-color: #f3f3f3;
         color: black;
+
+        &:hover{
+           @include transform(rotate(-20deg));
+            background-color: darken(#fff,20%);    
+        }
     }
 
 }

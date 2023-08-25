@@ -20,10 +20,9 @@ span {
   background-color: lightsalmon; }
 
 header {
-  background-color: #333;
-  color: #f3f3f3; }
+  background-color: white; }
   header h1 {
-    color: aqua; }
+    color: #000; }
 
 .section {
   width: 50%;
@@ -49,7 +48,17 @@ a {
 .btn-light {
   background-color: #333;
   color: white; }
+  .btn-light:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    background-color: black; }
 
 .btn-dark {
   background-color: #f3f3f3;
   color: black; }
+  .btn-dark:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    background-color: #cccccc; }
