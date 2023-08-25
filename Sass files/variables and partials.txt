@@ -7,4 +7,6 @@ $color: red;
 
 
 ******* partials 
+file name should be start with ex : _header or _footer
+
 @import 'variables';
