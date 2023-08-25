@@ -1,6 +1,13 @@
-$color: lightblue;
-$heading-fonts : Arial, Helvetica, sans-serif;
 // variables 
+$paragraph-height : 1.5rem;
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+}
 
 body{
     background-color: $color;
@@ -9,4 +16,9 @@ body{
 
 h1{
     font-family: $heading-fonts;
+    text-align: center;
+}
+
+h2{
+    background-color: #f3f3f3;
 }
