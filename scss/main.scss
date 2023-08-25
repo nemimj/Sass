@@ -7,6 +7,7 @@ $paragraph-height : 1.5rem;
     padding: 0;
     box-sizing: border-box;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 body{
@@ -21,4 +22,40 @@ h1{
 
 h2{
     background-color: #f3f3f3;
+}
+
+span{
+    background-color: lightsalmon;
+}
+
+
+header{
+    background-color: #333;
+    color: #f3f3f3;
+
+    h1{
+        color: aqua;
+    }
+}
+
+
+//* &- represents the parent name with class or id 
+.section{
+    width: 50%;
+    margin: 1rem auto;
+
+    &-a{
+        background-color: aquamarine;
+    }
+
+    &-b{
+        background-color: bisque;
+    }
+}
+
+a{
+color: #333;
+&:hover{
+    color:red;
+}
 }

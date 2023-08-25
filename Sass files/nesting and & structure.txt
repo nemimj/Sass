@@ -1,0 +1,30 @@
+********* Nesting
+header{
+    background-color: #333;
+    color: #f3f3f3;
+
+    h1{
+        color: aqua;
+    }
+}
+
+
+
+
+
+
+******** & Structure (& -> means parent name with class or id )
+
+.section{
+    width: 50%;
+    margin: auto;
+
+    &-a{
+        background-color: aquamarine;
+    }
+
+    &-b{
+        background-color: bisque;
+    }
+}
+
